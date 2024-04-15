@@ -10,22 +10,22 @@ const Home = () => {
     const [tareas, setTareas] = useState([
         {
             id: 1,
-            title: 'Darle de comer a los perros',
+            title: 'Terminar de ver los videos bien',
             completed: false,
         },
         {
             id: 2,
-            title: 'Visitar al abuelo',
+            title: 'Hacer la barra de busqueda y el agregar tarea',
             completed: false,
         },
         {
             id: 3,
-            title: 'Lavar los platos',
+            title: 'Hacer la carpeta Readme',
             completed: false,
         },
         {
             id: 4,
-            title: 'Estudiar 2 horas',
+            title: 'Cambiar los estilos',
             completed: false,
         }
     ])
