@@ -1,10 +1,10 @@
-const Title = () => {
+const Title = ({ text }) => {
     return (
         <h1 className="text-5xl font-serif font-bold tracking-widest text-center">
-            To-Do
+            {text}
         </h1>
 
     );
 }
 
-export { Title };
+export default Title;
