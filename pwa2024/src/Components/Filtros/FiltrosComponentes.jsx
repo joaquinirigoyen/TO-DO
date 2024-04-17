@@ -1,3 +1,6 @@
+
+// Hay que crear un archivo para cada filtro  (El nombre debe ser el mismo ) y ver si anda todo ok
+
 const FiltersContainer = ({ children }) => {
     return (
         <div className="flex items-center justify-between p-4 bg-gray-700 border-b border-solid border-gray-600">
@@ -21,10 +24,7 @@ const ItemsLeft = ({ total, mensaje }) => {
         </p>
     )
 };
-
-const FilterButtonContainer = ({
-    children
-}) => {
+const FilterButtonContainer = ({ children }) => {
     return (
         <div className="flex items-center space-x-2">
             {children}

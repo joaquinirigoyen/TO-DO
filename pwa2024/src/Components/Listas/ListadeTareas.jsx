@@ -1,4 +1,4 @@
-import { Tareas } from "./Tareas"
+import { Tarea } from "./Tarea"
 import FiltroTarea from "../Filtros/FiltroTarea"
 
 const ListadeTareas = ({
@@ -13,7 +13,12 @@ const ListadeTareas = ({
     return (
         <div className="flex flex-col mt-7 rounded-lg overflow-hidden shadow-2xl">
             {tareas.map(tarea => (
-                <Tareas key={tarea.id} tarea={tarea} handleSetComplete={handleSetComplete} handleDelete={handleDelete} />
+                <Tarea
+                    key={tarea.id}
+                    tarea={tarea}
+                    handleSetComplete={handleSetComplete}
+                    handleDelete={handleDelete}
+                />
             )
             )}
             <FiltroTarea
@@ -22,7 +27,8 @@ const ListadeTareas = ({
                 showAllTareas={showAllTareas}
                 showActiveTareas={showActiveTareas}
                 showCompletedTareas={showCompletedTareas}
-                handleClearComplete={handleClearComplete} />
+                handleClearComplete={handleClearComplete}
+            />
         </div>
     )
 }

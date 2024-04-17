@@ -1,4 +1,4 @@
-const Tareas = ({ tarea, handleSetComplete, handleDelete }) => {
+const Tarea = ({ tarea, handleSetComplete, handleDelete }) => {
 
     const { id, title, completed } = tarea;
 
@@ -7,7 +7,7 @@ const Tareas = ({ tarea, handleSetComplete, handleDelete }) => {
             className="flex items-center justify-between p-4 bg-gray-700 border-b border-solid border-gray-600 "
         >
             <div className="flex items-center">
-                {
+                { //aca se aplica el rednderizado condicional
                     completed ? (
                         <div onClick={() => handleSetComplete(id)} className="bg-green-700 p-1 rounded-full cursor-pointer">
                             <img className="h-4 w-4 " src="/check-icon.svg" alt="Check Icon" />
@@ -25,4 +25,4 @@ const Tareas = ({ tarea, handleSetComplete, handleDelete }) => {
     );
 }
 
-export { Tareas } 
+export { Tarea } 

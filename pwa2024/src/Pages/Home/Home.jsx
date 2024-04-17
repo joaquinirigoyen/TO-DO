@@ -7,10 +7,11 @@ import ListadeTareas from "../../Components/Listas/ListadeTareas";
 
 const Home = () => {
 
+    //Arreglo de Tareas
     const [tareas, setTareas] = useState([
         {
             id: 1,
-            title: 'Terminar de ver los videos bien',
+            title: 'Terminar de comentar bien el codigo',
             completed: false,
         },
         {
@@ -30,10 +31,7 @@ const Home = () => {
         }
     ])
 
-    const [activeFilter, setActiveFilter] = useState('Todas');
-
-    const [filteredTareas, setFilteredTareas] = useState(tareas);
-
+    //funcion para agregar una tarea 
     const addTarea = (title) => {
         const lastId = tareas.length > 0 ? tareas[tareas.length - 1].id : 1;
 
@@ -49,7 +47,7 @@ const Home = () => {
         setTareas(tareaList);
     }
 
-
+    //funcion para cambiarle el estado a las tares (True/false)
     const handleSetComplete = (id) => {
 
         const updatedList = tareas.map(tarea => {
@@ -60,17 +58,24 @@ const Home = () => {
         })
 
         setTareas(updatedList);
-    }
+    };
 
+    //funcion para borrar todas las tareas
     const handleClearComplete = () => {
         const updatedList = tareas.filter(tarea => !tarea.completed);
         setTareas(updatedList);
     };
 
+    //funcion para borrar una tarea especifica 
     const handleDelete = (id) => {
         const updatedList = tareas.filter(tarea => tarea.id !== id);
         setTareas(updatedList);
-    }
+    };
+
+    // Activador de filtros para mostrar las tareas segun su estado 
+    const [activeFilter, setActiveFilter] = useState('Todas');
+
+    const [filteredTareas, setFilteredTareas] = useState(tareas);
 
     const showAllTareas = () => {
         setActiveFilter('Todas')
