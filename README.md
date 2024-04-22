@@ -8,6 +8,21 @@ Este proyecto es una aplicación de lista de tareas (To-Do List) diseñada para 
 
  ![image](https://github.com/joaquinirigoyen/React_PWA2024/assets/117104240/0c91891f-1b6a-4297-a263-5dc6fa721a9f)
 
+
+## Funcionalidades: 
+
+### `index.js`
+El archivo index.js es el punto de entrada principal de una aplicación React. Se utiliza para renderizar el componente principal de la aplicación en el DOM (Document Object Model) del navegador.En este archivo, generalmente encontrarás código que importa el componente principal de la aplicación (como App.js).
+
+### `app.js`
+El archivo App.js contiene el componente principal de la aplicación React. En este componente, definirás la estructura general de tu aplicación, incluyendo la disposición de las diferentes secciones y componentes. Aquí es donde importarás y utilizarás otros componentes de React para construir la interfaz de usuario.
+
+### `index.css`
+El archivo index.css (o App.css en algunos casos) contiene estilos CSS globales que se aplicarán a toda la aplicación. Aquí puedes definir estilos para elementos HTML, clases CSS reutilizables, o estilos específicos para componentes de tu aplicación.
+
+### `package.json`
+El archivo package.json es un archivo de configuración fundamental en un proyecto Node.js (y por lo tanto en un proyecto React) que contiene metadatos sobre el proyecto, como nombre, versión, dependencias, scripts de inicio, y más. Aquí es donde se especifican las dependencias del proyecto, incluyendo las versiones de React y otros paquetes necesarios.
+
 ## Instalacion
 
 Paso a paso para instalar y configurar el proyecto:
