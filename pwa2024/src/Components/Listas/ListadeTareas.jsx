@@ -1,4 +1,4 @@
-import { Tarea } from "./Tarea"
+import { Tarea } from "../Tarea/Tarea"
 import FiltroTarea from "../Filtros/FiltroTarea"
 
 const ListadeTareas = ({
