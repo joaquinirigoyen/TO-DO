@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Title from "../../Components/Title/Title";
 import InputBuscar from "../../Components/Inputs/InputBuscar";
 import ListadeTareas from "../../Components/Listas/ListadeTareas";
+import { InputAgregar } from "../../Components/Inputs/InputAgregar";
 
 
 const Home = () => {
@@ -107,6 +108,7 @@ const Home = () => {
             <div className="container flex flex-col max-w-xl">
                 <Title text="To-Do" />
                 <InputBuscar />
+                <InputAgregar addTarea={addTarea} />
                 <ListadeTareas
                     activeFilter={activeFilter}
                     tareas={filteredTareas}

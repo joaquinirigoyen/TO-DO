@@ -25,4 +25,4 @@ const Tarea = ({ tarea, handleSetComplete, handleDelete }) => {
     );
 }
 
-export { Tarea } 
+export default Tarea;

@@ -1,4 +1,7 @@
-import { FilterButton, FilterButtonContainer, FiltersContainer, ItemsLeft } from "./FiltrosComponentes"
+import { FilterButton } from "./FilterButton"
+import { FilterButtonContainer } from "./FilterButtonContainer"
+import { FiltersContainer } from "./FiltersContainer"
+import { ItemsLeft } from "./ItemsLeft"
 import Button from "../Button/Button"
 
 const FiltroTarea = ({ total, activeFilter, showAllTareas, showActiveTareas, showCompletedTareas, handleClearComplete, addTarea }) => {
