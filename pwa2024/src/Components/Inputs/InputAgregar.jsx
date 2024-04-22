@@ -4,7 +4,7 @@ const InputAgregar = ({ addTarea }) => {
 
     const [title, setTitle] = useState('');
 
-    const handleAddTodo = (e) => {
+    const handleAddTarea = (e) => {
         if (e.key.toLowerCase() === 'enter') {
             addTarea(title);
             setTitle('');
@@ -25,7 +25,7 @@ const InputAgregar = ({ addTarea }) => {
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                onKeyDown={(e) => handleAddTodo(e)}
+                onKeyDown={(e) => handleAddTarea(e)}
                 placeholder="Nueva Tarea..."
             />
         </div>

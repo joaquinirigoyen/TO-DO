@@ -32,6 +32,16 @@ const Home = () => {
         }
     ])
 
+    // Función para buscar tareas
+    const searchTarea = (title) => {
+        const search = title.trim().toLowerCase();
+        const result = tareas.filter((tarea) =>
+            tarea.title.toLowerCase().includes(search)
+        );
+        setFilteredTareas(result); // Actualizar las tareas filtradas
+    };
+
+
     //funcion para agregar una tarea 
     const addTarea = (title) => {
         const lastId = tareas.length > 0 ? tareas[tareas.length - 1].id : 1;
@@ -107,7 +117,7 @@ const Home = () => {
         <div className=" bg-slate-600 min-h-screen h-ful text-gray-200 flex items-center justify-center py-20 px-5 " >
             <div className="container flex flex-col max-w-xl">
                 <Title text="To-Do" />
-                <InputBuscar />
+                <InputBuscar searchTarea={searchTarea} />
                 <InputAgregar addTarea={addTarea} />
                 <ListadeTareas
                     activeFilter={activeFilter}
@@ -119,6 +129,7 @@ const Home = () => {
                     handleDelete={handleDelete}
                     handleClearComplete={handleClearComplete}
                     addTarea={addTarea}
+                    searchTarea={searchTarea}
                 />
             </div>
         </div >

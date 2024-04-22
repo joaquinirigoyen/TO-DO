@@ -13,7 +13,6 @@ const FiltroTarea = ({ total, activeFilter, showAllTareas, showActiveTareas, sho
                 <FilterButton action={() => showActiveTareas()} active={activeFilter} filter='Pendientes' />
                 <FilterButton action={() => showCompletedTareas()} active={activeFilter} filter='Completas' />
             </FilterButtonContainer>
-            <Button text="Agregar" onClick={addTarea} />
             <Button text="Borrar" onClick={handleClearComplete} />
         </FiltersContainer>
     )
