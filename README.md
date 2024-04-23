@@ -2,6 +2,7 @@
 
 ## Integrantes:
 Joaquin Conrado Irigoyen - FAI-4223 - joaquin.irigoyen@est.fi.uncoma.edu.ar
+Jara Hector - 75994 - En desarrollo todavia (Rama develop)
 ## Descripcion:
 Este proyecto es una aplicación de lista de tareas (To-Do List) diseñada para ayudarte a organizar y gestionar tus tareas diarias de manera eficiente. Permite a los usuarios agregar, eliminar y marcar tareas como completadas. La aplicación también incluye funcionalidades de búsqueda y filtrado para facilitar la gestión de las tareas. Es una herramienta simple pero efectiva para mejorar la productividad y mantenerse organizado en la vida diaria.
 
