@@ -1,6 +1,7 @@
 export default function Tarea({descripcion, estaCompletada}){ 
-    if (estaCompletada) {
-        return <li>{descripcion} OK</li>
-    }
-    return <li>{descripcion}</li>
+    return (
+        <li>
+            {estaCompletada ? descripcion + " OK" : descripcion}
+        </li>
+    )
 }
