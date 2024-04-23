@@ -1,5 +1,7 @@
+import Titulo from "../../Components/Titulo/Titulo";
+
 export default function Home(){
     return (
-        <h1>Tareas</h1>
+        <Titulo texto ="Tareas"/>
     )
 }
