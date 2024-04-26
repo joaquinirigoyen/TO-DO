@@ -6,7 +6,7 @@ export default function Tarea({descripcion, estaCompletada}){
         }
     return (
         <>
-            <input type="checkbox" checked={completa} onClick={handleClick}></input>
+            <button onClick={handleClick}> ▀ </button>            
             {completa ? (<del>{descripcion}</del>): (descripcion)}
         </>
     )
