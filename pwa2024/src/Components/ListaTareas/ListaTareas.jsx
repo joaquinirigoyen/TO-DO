@@ -1,8 +1,8 @@
-import { tareas } from '../../datos/tareas';
 import Tarea from '../Tarea/Tarea';
 
-export default function ListaTareas(){     
-    const listaTareas = tareas.map(tarea =>
+export default function ListaTareas(){   
+    const tareasLocalStrg = JSON.parse(localStorage.getItem('tareas'));
+    const listaTareas = tareasLocalStrg.map(tarea =>
         <li key={tarea.id}>
             <Tarea descripcion={tarea.descripcion} estaCompletada={tarea.estaCompletada}/>
         </li>);
