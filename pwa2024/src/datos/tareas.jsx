@@ -1,4 +1,4 @@
-export const tareas = [
+export const arregloTareas = [
     {
         id: 0,
         descripcion: "Andar en Bicicleta",
