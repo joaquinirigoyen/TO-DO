@@ -36,7 +36,8 @@ export default function Home(){
     
     return (
         <>
-            <Titulo texto="Tareas" />
+            <Titulo texto="Tareas" /><br/>
+            <h2>Tareas Totales: {tareas.length}</h2>
             <AgregarTarea agregarTarea={agregarTareaNueva}/>
             <ListaTareas tareasA={tareas} cambiarEstado={cambiarEstado} eliminarTarea={eliminarTarea} />
         </>

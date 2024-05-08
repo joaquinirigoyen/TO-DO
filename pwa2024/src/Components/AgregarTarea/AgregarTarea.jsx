@@ -5,7 +5,7 @@ export default function AgregarTarea({agregarTarea}){
 
     return (
         <>
-            <label>Agregar Tarea</label>
+            <label>Agregar Tarea</label><br/>
                 <input type="text"
                     value = {valorinput}
                     onChange ={e => setValorInput(e.target.value)} >
