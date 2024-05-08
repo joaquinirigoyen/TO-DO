@@ -29,11 +29,16 @@ export default function Home(){
         setTareas(tareasActualizadas);
     }
 
+    function eliminarTarea(id){
+        const tareasActualizadas = tareas.filter(tarea =>tarea.id !==id);
+        setTareas(tareasActualizadas);
+    }
+    
     return (
         <>
             <Titulo texto="Tareas" />
             <AgregarTarea agregarTarea={agregarTareaNueva}/>
-            <ListaTareas tareasA={tareas} handleClick={cambiarEstado} />
+            <ListaTareas tareasA={tareas} cambiarEstado={cambiarEstado} eliminarTarea={eliminarTarea} />
         </>
     )
 }
