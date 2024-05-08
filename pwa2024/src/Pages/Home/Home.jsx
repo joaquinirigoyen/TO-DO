@@ -37,7 +37,8 @@ export default function Home(){
     return (
         <>
             <Titulo texto="Tareas" /><br/>
-            <h2>Tareas Totales: {tareas.length}</h2>
+            <h2>Tareas Totales: {tareas.length}</h2><br/>
+            <h2>Tareas Completadas: {tareas.filter(tarea=>tarea.estaCompletada===true).length}</h2>
             <AgregarTarea agregarTarea={agregarTareaNueva}/>
             <ListaTareas tareasA={tareas} cambiarEstado={cambiarEstado} eliminarTarea={eliminarTarea} />
         </>
